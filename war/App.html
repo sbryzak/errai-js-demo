@@ -28,20 +28,46 @@
 </body>
 
 <script type="text/javascript">
-function erraiOnLoad() {
-    var bus = new errai.MsgBus();
-    bus.subscribe("WindowAlertTopic",
-    function(msg) {
-        window.alert(msg.Value + " @ server time " + msg.systemTime);
-    });
-}
 
-function sendClickEvent() {
-    var bus = new errai.MsgBus();
-    var msg = new Object();
-    msg.Value = "Hey!";
+    /**
+     * erraiOnLoad() is called when the bus in a ready-to-go state.
+     */
+    function erraiOnLoad() {
+        /**
+         * Instantiate the Errai JS client
+         */
+        var bus = new errai.MsgBus();
 
-    bus.send("HelloWorldService", msg);
-}
+        /**
+         * Subscribe to a topic with a callback.
+         */
+        bus.subscribe("WindowAlertTopic",
+                function (msg) {
+                    window.alert(msg.Value + " @ server time " + msg.systemTime);
+                });
+    }
+
+    function sendClickEvent() {
+        /**
+         * Instantiate the Errai JS client
+         */
+        var bus = new errai.MsgBus();
+
+        /**
+         * Create a new custom object as the message envelope.
+         */
+        var msg = new Object();
+
+        /**
+         * Set the 'Value' property -- uppercase 'Value' is the default property name
+         * in Errai. Although you can use arbitrary names.
+         */
+        msg.Value = "Hey!";
+
+        /**
+         * Transmit the message.
+         */
+        bus.send("HelloWorldService", msg);
+    }
 </script>
 </html>

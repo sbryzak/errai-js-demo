@@ -23,14 +23,20 @@ import org.jboss.errai.bus.server.annotations.Service;
 
 @Service
 public class HelloWorldService implements MessageCallback {
-
   public void callback(Message message) {
     System.out.println("Received: " + message.get(String.class, MessageParts.Value));
 
+    /**
+     * Create a conversation with the sending client.
+     */
     MessageBuilder.createConversation(message)
+            /* to the 'WindowAlertTopic' */
             .toSubject("WindowAlertTopic")
+                    /* with a message using the default message part */
             .with(MessageParts.Value, "Hello, World from Server!")
+                    /* and an arbitrary part for good measure */
             .with("systemTime", System.currentTimeMillis())
+                    /* finish constructing the message and reply to sender */
             .done().reply();
   }
 }
