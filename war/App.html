@@ -28,19 +28,20 @@
 </body>
 
 <script type="text/javascript">
-    /**
-     * erraiOnLoad() is called by ErraiJS when the bus is connected an in a ready state.
-     */
-    function erraiOnLoad() {
-        var bus = new errai.MsgBus();
-        bus.subscribe("WindowAlertTopic", function (msg) {
-            window.alert(msg.Value + " @ server time " + msg.systemTime);
-        });
-    }
+function erraiOnLoad() {
+    var bus = new errai.MsgBus();
+    bus.subscribe("WindowAlertTopic",
+    function(msg) {
+        window.alert(msg.Value + " @ server time " + msg.systemTime);
+    });
+}
 
-    function sendClickEvent() {
-        var bus = new errai.MsgBus();
-        bus.send("HelloWorldService", "Hey!");
-    }
+function sendClickEvent() {
+    var bus = new errai.MsgBus();
+    var msg = new Object();
+    msg.Value = "Hey!";
+
+    bus.send("HelloWorldService", msg);
+}
 </script>
 </html>
