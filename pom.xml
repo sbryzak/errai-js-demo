@@ -26,11 +26,6 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
-	<description>
-        A GWT framework
-    </description>
-
 	<developers>
 		<developer>
 			<name>Mike Brock</name>
@@ -50,8 +45,6 @@
 
 	<properties>
 		<errai.version>2.0-SNAPSHOT</errai.version>
-		<gwt.version>2.3.0</gwt.version>
-		<gwt.maven.version>2.3.0</gwt.maven.version>
 		<webXmlPath>src/jetty/web.xml</webXmlPath>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -81,25 +74,6 @@
 			<artifactId>errai-tools</artifactId>
 			<version>${errai.version}</version>
 		</dependency>
-
-		<!-- GWT and GWT Extensions -->
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-servlet</artifactId>
-			<scope>provided</scope>
-			<version>${gwt.version}</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.gwt</groupId>
-			<artifactId>gwt-user</artifactId>
-			<scope>provided</scope>
-			<version>${gwt.version}</version>
-		</dependency>
-
-		<!-- <dependency> <groupId>com.google.gwt</groupId> <artifactId>gwt-dev</artifactId> 
-			<scope>provided</scope> <version>${gwt.version}</version> </dependency> -->
-
 	</dependencies>
 
 	<profiles>
@@ -263,15 +237,6 @@
 							</execution>
 						</executions>
 					</plugin>
-
-					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>gwt-maven-plugin</artifactId>
-						<version>${gwt.maven.version}</version>
-						<configuration>
-							<skip>true</skip>
-						</configuration>
-					</plugin>
 				</plugins>
 			</build>
 		</profile>
@@ -355,29 +320,6 @@
 
 		<plugins>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>gwt-maven-plugin</artifactId>
-				<version>${gwt.maven.version}</version>
-				<configuration>
-					<inplace>true</inplace>
-					<logLevel>INFO</logLevel>
-					<runTarget>App.html</runTarget>
-					<warSourceDirectory>war</warSourceDirectory>
-					<extraJvmArgs>-Xmx512m</extraJvmArgs>
-					<treeLogger>true</treeLogger>
-					<hostedWebapp>war</hostedWebapp>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>resources</goal>
-							<goal>compile</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-
-			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
@@ -432,53 +374,8 @@
 				</executions>
 			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.m2e</groupId>
-					<artifactId>lifecycle-mapping</artifactId>
-					<version>1.0.0</version>
-					<configuration>
-						<lifecycleMappingMetadata>
-							<pluginExecutions>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>org.codehaus.mojo</groupId>
-										<artifactId>gwt-maven-plugin</artifactId>
-										<versionRange>[2.3.0,)</versionRange>
-										<goals>
-											<goal>resources</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<execute />
-									</action>
-								</pluginExecution>
-							</pluginExecutions>
-						</lifecycleMappingMetadata>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 
-	<reporting>
-		<excludeDefaults>true</excludeDefaults>
-		<plugins>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>gwt-maven-plugin</artifactId>
-				<version>${gwt.maven.version}</version>
-				<reportSets>
-					<reportSet>
-						<reports>
-							<report>soyc</report>
-						</reports>
-					</reportSet>
-				</reportSets>
-			</plugin>
-		</plugins>
-	</reporting>
 
 	<!-- Repositories -->
 	<repositories>
