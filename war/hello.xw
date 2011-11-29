@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xw:view xmlns="http://www.w3.org/1999/xhtml" xmlns:xw="http://xwidgets.org/core" xmlns:errai="http://xwidgets.org/errai">   
+  
+  <errai:messageBus id="bus" service="HelloWorldService"/>
+  
+  <errai:subscriber topic="WindowAlertTopic">
+    <xw:event type="onmessage">
+      <xw:action type="script">window.alert(msg.Value + " @ server time " + msg.systemTime);</xw:action>
+    </xw:event>
+  </errai:subscriber>
+
+  <xw:button label="Click me!">
+    <xw:event type="onclick">
+      <xw:action type="script">bus.sendTextMessage("Hey!");</xw:action>
+    </xw:event>
+  </xw:button>
+  
+</xw:view>
