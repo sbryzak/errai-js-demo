@@ -45,6 +45,14 @@
                 function (msg) {
                     window.alert(msg.Value + " @ server time " + msg.systemTime);
                 });
+
+
+        var marshal = new errai.Marshal();
+
+
+
+
+        alert(marshal.demarshall("{\"Hello\"}"))
     }
 
     function sendClickEvent() {
