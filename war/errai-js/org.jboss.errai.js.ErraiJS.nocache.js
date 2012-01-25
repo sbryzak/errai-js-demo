@@ -1,5 +1,5 @@
 function org_jboss_errai_js_ErraiJS(){
-  var $intern_0 = '', $intern_35 = '" for "gwt:onLoadErrorFn"', $intern_33 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_61 = '.cache.html', $intern_12 = '/', $intern_54 = '025593C5A4C6CBE181344047F84ED24F', $intern_55 = '0664239C9882AEB2D6761E969664B294', $intern_56 = '4C7BF2229B94C92D16BB05219FD5D87D', $intern_57 = '7476A51372180758C720C7C68325D18C', $intern_58 = '7C4B6BF771093266EA37B292C468EA23', $intern_60 = ':', $intern_27 = '::', $intern_66 = '<script defer="defer">org_jboss_errai_js_ErraiJS.onInjectionDone(\'org.jboss.errai.js.ErraiJS\')<\/script>', $intern_20 = '<script id="', $intern_64 = '<script language="javascript" src="', $intern_30 = '=', $intern_11 = '?', $intern_59 = 'AB64FA2BAE5E2B86BB410F98058D4CDC', $intern_32 = 'Bad handler "', $intern_62 = 'DOMContentLoaded', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_org.jboss.errai.js.ErraiJS', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_14 = 'clear.cache.gif', $intern_29 = 'content', $intern_9 = 'end', $intern_48 = 'gecko', $intern_49 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_34 = 'gwt:onLoadErrorFn', $intern_31 = 'gwt:onPropertyErrorFn', $intern_28 = 'gwt:property', $intern_52 = 'hosted.html?org_jboss_errai_js_ErraiJS', $intern_47 = 'ie6', $intern_46 = 'ie8', $intern_45 = 'ie9', $intern_36 = 'iframe', $intern_13 = 'img', $intern_37 = "javascript:''", $intern_63 = 'js/pagebus.js', $intern_65 = 'js/pagebus.js"><\/script>', $intern_51 = 'loadExternalRefs', $intern_24 = 'meta', $intern_39 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_44 = 'msie', $intern_25 = 'name', $intern_41 = 'opera', $intern_1 = 'org.jboss.errai.js.ErraiJS', $intern_17 = 'org.jboss.errai.js.ErraiJS.nocache.js', $intern_26 = 'org.jboss.errai.js.ErraiJS::', $intern_38 = 'position:absolute;width:0;height:0;border:none', $intern_43 = 'safari', $intern_16 = 'script', $intern_53 = 'selectingPermutation', $intern_2 = 'startup', $intern_18 = 'undefined', $intern_50 = 'unknown', $intern_40 = 'user.agent', $intern_42 = 'webkit';
+  var $intern_0 = '', $intern_35 = '" for "gwt:onLoadErrorFn"', $intern_33 = '" for "gwt:onPropertyErrorFn"', $intern_21 = '"><\/script>', $intern_10 = '#', $intern_64 = '.cache.html', $intern_12 = '/', $intern_57 = '2C6FCE15F350F2A6E369471527F4F4E8', $intern_58 = '3C063BBE1102AEFA9B036C726E8D895C', $intern_59 = '4D195963C4E71B2E9A79A84FB1B659A3', $intern_63 = ':', $intern_27 = '::', $intern_66 = '<script defer="defer">org_jboss_errai_js_ErraiJS.onInjectionDone(\'org.jboss.errai.js.ErraiJS\')<\/script>', $intern_20 = '<script id="', $intern_30 = '=', $intern_11 = '?', $intern_44 = 'ActiveXObject', $intern_32 = 'Bad handler "', $intern_60 = 'CAF03E4CAB3E35610AF2AC695AE997AD', $intern_45 = 'ChromeTab.ChromeFrame', $intern_61 = 'D7A5308497278B007B5B6C831B6D6259', $intern_65 = 'DOMContentLoaded', $intern_62 = 'F9A3477642B9B59CC008B9133CA208C2', $intern_22 = 'SCRIPT', $intern_19 = '__gwt_marker_org.jboss.errai.js.ErraiJS', $intern_23 = 'base', $intern_15 = 'baseUrl', $intern_4 = 'begin', $intern_3 = 'bootstrap', $intern_43 = 'chromeframe', $intern_14 = 'clear.cache.gif', $intern_29 = 'content', $intern_9 = 'end', $intern_51 = 'gecko', $intern_52 = 'gecko1_8', $intern_5 = 'gwt.codesvr=', $intern_6 = 'gwt.hosted=', $intern_7 = 'gwt.hybrid', $intern_34 = 'gwt:onLoadErrorFn', $intern_31 = 'gwt:onPropertyErrorFn', $intern_28 = 'gwt:property', $intern_55 = 'hosted.html?org_jboss_errai_js_ErraiJS', $intern_50 = 'ie6', $intern_49 = 'ie8', $intern_48 = 'ie9', $intern_36 = 'iframe', $intern_13 = 'img', $intern_37 = "javascript:''", $intern_54 = 'loadExternalRefs', $intern_24 = 'meta', $intern_39 = 'moduleRequested', $intern_8 = 'moduleStartup', $intern_47 = 'msie', $intern_25 = 'name', $intern_41 = 'opera', $intern_1 = 'org.jboss.errai.js.ErraiJS', $intern_17 = 'org.jboss.errai.js.ErraiJS.nocache.js', $intern_26 = 'org.jboss.errai.js.ErraiJS::', $intern_38 = 'position:absolute;width:0;height:0;border:none', $intern_46 = 'safari', $intern_16 = 'script', $intern_56 = 'selectingPermutation', $intern_2 = 'startup', $intern_18 = 'undefined', $intern_53 = 'unknown', $intern_40 = 'user.agent', $intern_42 = 'webkit';
   var $wnd = window, $doc = document, $stats = $wnd.__gwtStatsEvent?function(a){
     return $wnd.__gwtStatsEvent(a);
   }
@@ -237,33 +237,50 @@ function org_jboss_errai_js_ErraiJS(){
     ())
       return $intern_41;
     if (function(){
-      return ua.indexOf($intern_42) != -1;
-    }
-    ())
-      return $intern_43;
-    if (function(){
-      return ua.indexOf($intern_44) != -1 && $doc.documentMode >= 9;
-    }
-    ())
-      return $intern_45;
-    if (function(){
-      return ua.indexOf($intern_44) != -1 && $doc.documentMode >= 8;
+      return ua.indexOf($intern_42) != -1 || function(){
+        if (ua.indexOf($intern_43) != -1) {
+          return true;
+        }
+        if (typeof window[$intern_44] != $intern_18) {
+          try {
+            var obj = new ActiveXObject($intern_45);
+            if (obj) {
+              obj.registerBhoIfNeeded();
+              return true;
+            }
+          }
+           catch (e) {
+          }
+        }
+        return false;
+      }
+      ();
     }
     ())
       return $intern_46;
+    if (function(){
+      return ua.indexOf($intern_47) != -1 && $doc.documentMode >= 9;
+    }
+    ())
+      return $intern_48;
+    if (function(){
+      return ua.indexOf($intern_47) != -1 && $doc.documentMode >= 8;
+    }
+    ())
+      return $intern_49;
     if (function(){
       var result = /msie ([0-9]+)\.([0-9]+)/.exec(ua);
       if (result && result.length == 3)
         return makeVersion(result) >= 6000;
     }
     ())
-      return $intern_47;
+      return $intern_50;
     if (function(){
-      return ua.indexOf($intern_48) != -1;
+      return ua.indexOf($intern_51) != -1;
     }
     ())
-      return $intern_49;
-    return $intern_50;
+      return $intern_52;
+    return $intern_53;
   }
   ;
   values[$intern_40] = {gecko1_8:0, ie6:1, ie8:2, ie9:3, opera:4, safari:5};
@@ -276,7 +293,7 @@ function org_jboss_errai_js_ErraiJS(){
   ;
   org_jboss_errai_js_ErraiJS.onInjectionDone = function(){
     scriptsDone = true;
-    $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_51, millis:(new Date).getTime(), type:$intern_9});
+    $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_54, millis:(new Date).getTime(), type:$intern_9});
     maybeStartModule();
   }
   ;
@@ -289,25 +306,25 @@ function org_jboss_errai_js_ErraiJS(){
       $wnd.location.reload();
       return;
     }
-    initialHtml = $intern_52;
+    initialHtml = $intern_55;
     strongName = $intern_0;
   }
-  $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_53});
+  $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_56});
   if (!isHostedMode()) {
     try {
-      unflattenKeylistIntoAnswers([$intern_41], $intern_54);
-      unflattenKeylistIntoAnswers([$intern_46], $intern_55);
-      unflattenKeylistIntoAnswers([$intern_47], $intern_56);
-      unflattenKeylistIntoAnswers([$intern_45], $intern_57);
-      unflattenKeylistIntoAnswers([$intern_49], $intern_58);
-      unflattenKeylistIntoAnswers([$intern_43], $intern_59);
+      unflattenKeylistIntoAnswers([$intern_52], $intern_57);
+      unflattenKeylistIntoAnswers([$intern_41], $intern_58);
+      unflattenKeylistIntoAnswers([$intern_50], $intern_59);
+      unflattenKeylistIntoAnswers([$intern_48], $intern_60);
+      unflattenKeylistIntoAnswers([$intern_49], $intern_61);
+      unflattenKeylistIntoAnswers([$intern_46], $intern_62);
       strongName = answers[computePropValue($intern_40)];
-      var idx = strongName.indexOf($intern_60);
+      var idx = strongName.indexOf($intern_63);
       if (idx != -1) {
         softPermutationId = Number(strongName.substring(idx + 1));
         strongName = strongName.substring(0, idx);
       }
-      initialHtml = strongName + $intern_61;
+      initialHtml = strongName + $intern_64;
     }
      catch (e) {
       return;
@@ -319,7 +336,7 @@ function org_jboss_errai_js_ErraiJS(){
       bodyDone = true;
       maybeStartModule();
       if ($doc.removeEventListener) {
-        $doc.removeEventListener($intern_62, onBodyDone, false);
+        $doc.removeEventListener($intern_65, onBodyDone, false);
       }
       if (onBodyDoneTimerId) {
         clearInterval(onBodyDoneTimerId);
@@ -328,7 +345,7 @@ function org_jboss_errai_js_ErraiJS(){
   }
 
   if ($doc.addEventListener) {
-    $doc.addEventListener($intern_62, function(){
+    $doc.addEventListener($intern_65, function(){
       maybeInjectFrame();
       onBodyDone();
     }
@@ -342,11 +359,7 @@ function org_jboss_errai_js_ErraiJS(){
   }
   , 50);
   $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_3, millis:(new Date).getTime(), type:$intern_9});
-  $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_51, millis:(new Date).getTime(), type:$intern_4});
-  if (!__gwt_scriptsLoaded[$intern_63]) {
-    __gwt_scriptsLoaded[$intern_63] = true;
-    document.write($intern_64 + base + $intern_65);
-  }
+  $stats && $stats({moduleName:$intern_1, sessionId:$sessionId, subSystem:$intern_2, evtGroup:$intern_54, millis:(new Date).getTime(), type:$intern_4});
   $doc.write($intern_66);
 }
 
