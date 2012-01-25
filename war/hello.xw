@@ -3,6 +3,8 @@
   
   <errai:messageBus id="bus" service="HelloWorldService"/>
   
+  <errai:rpc id="rpc" service="org.js.test.server.HelloService:RPC"/>
+  
   <errai:subscriber topic="WindowAlertTopic">
     <xw:event type="onmessage">
       <xw:action type="script">window.alert(msg.Value + " @ server time " + msg.systemTime);</xw:action>
@@ -12,6 +14,12 @@
   <xw:button label="Click me!">
     <xw:event type="onclick">
       <xw:action type="script">bus.sendTextMessage("Hey!");</xw:action>
+    </xw:event>
+  </xw:button>
+  
+  <xw:button label="Invoke RPC">
+    <xw:event type="onclick">
+      <xw:action type="script">rpc.invoke("foo");</xw:action>
     </xw:event>
   </xw:button>
   
