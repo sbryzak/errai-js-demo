@@ -27,40 +27,23 @@ org.xwidgets.errai.Rpc.prototype.init = function() {
 org.xwidgets.errai.Rpc.prototype.invoke = function(value) {
 {
     var busRef = this.bus;
-    var replySvc = "rpc:methoddRely" + (rpcReplyCount++);
+    var replySvc = "rpc:methodReply:" + (rpcReplyCount++);
     this.bus.subscribe(replySvc, function (msg) {
        alert(msg.MethodReply);
         busRef.unsubcribeAll(replySvc);
     });
 
-//  var parms = {};
-//  parms["^EncodedType"] = "[Ljava.lang.Object;";
-//  parms["^ObjectID"] = "1";
-//  parms["^Value"] = [ value ];
 
   var payload = {CommandType : "sayHello:java.lang.String:",
     MethodParms: [ value ],
      ReplyTo:replySvc
 //    ErrorTo:
-    }};
+    };
 
   this.bus.send(this.service, payload);
 
-  /*
-  "org.jboss.xwidgetserrai.client.shared.HelloService:RPC", {});
-    "ToSubject": ,
-    "CommandType": "sayHello:java.lang.String:",
-    "MethodParms": {
-        "^EncodedType": "[Ljava.lang.Object;",
-        "^ObjectID": "1",
-        "^Value": [
-            "foo"
-        ]
-    },
-    "ReplyTo": "org.jboss.xwidgetserrai.client.shared.HelloService:RPC.sayHello:java.lang.String::RespondTo:2",
-    "ErrorTo": "org.jboss.xwidgetserrai.client.shared.HelloService:RPC.sayHello:java.lang.String::Errors:2"
-    }*/
 };
+}
 
 org.xwidgets.errai.Rpc.prototype.toString = function() {
   return "org.xwidgets.errai.Rpc[" + this.service + "]";
