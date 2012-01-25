@@ -1,9 +1,11 @@
 package("org.xwidgets.errai");
 
+var rpcReplyCount = 0;
+
 org.xwidgets.errai.Rpc = function() {
   xw.NonVisual.call(this);
   this._className = "org.xwidgets.errai.Rpc";
-  this.registerProperty("service");  
+  this.registerProperty("service");
 };
 
 org.xwidgets.errai.Rpc.prototype = new xw.NonVisual();
@@ -21,22 +23,29 @@ org.xwidgets.errai.Rpc.prototype.open = function() {
 org.xwidgets.errai.Rpc.prototype.init = function() {
   this.bus = new errai.MsgBus();
 };
-    
+
 org.xwidgets.errai.Rpc.prototype.invoke = function(value) {
 {
-  var parms = {};
-  parms["^EncodedType"] = "[Ljava.lang.Object;";
-  parms["^ObjectID"] = "1";
-  parms["^Value"] = [ value ];
-  
-  var payload = {CommandType : "sayHello:java.lang.String:", 
-    MethodParms: parms
-//    ReplyTo:
+    var busRef = this.bus;
+    var replySvc = "rpc:methoddRely" + (rpcReplyCount++);
+    this.bus.subscribe(replySvc, function (msg) {
+       alert(msg.MethodReply);
+        busRef.unsubcribeAll(replySvc);
+    });
+
+//  var parms = {};
+//  parms["^EncodedType"] = "[Ljava.lang.Object;";
+//  parms["^ObjectID"] = "1";
+//  parms["^Value"] = [ value ];
+
+  var payload = {CommandType : "sayHello:java.lang.String:",
+    MethodParms: [ value ],
+     ReplyTo:replySvc
 //    ErrorTo:
     }};
-  
+
   this.bus.send(this.service, payload);
-  
+
   /*
   "org.jboss.xwidgetserrai.client.shared.HelloService:RPC", {});
     "ToSubject": ,
