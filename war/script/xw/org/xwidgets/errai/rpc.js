@@ -30,7 +30,7 @@ org.xwidgets.errai.Rpc.prototype.invoke = function(value) {
     var replySvc = "rpc:methodReply:" + (rpcReplyCount++);
     this.bus.subscribe(replySvc, function (msg) {
        alert(msg.MethodReply);
-        busRef.unsubcribeAll(replySvc);
+        busRef.unsubscribeAll(replySvc);
     });
 
 
