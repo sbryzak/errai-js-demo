@@ -23,7 +23,9 @@ org.xwidgets.errai.Subscriber.prototype.init = function() {
   this.bus = new errai.MsgBus();
   
   var that = this;
-  var cb = function(msg) { that.onmessage.invoke({msg:msg}); };
+  var cb = function(msg) { 
+    that.onmessage.invoke({msg:msg}); };
+     
   this.bus.subscribe(this.topic, cb);
 };
     

@@ -10,16 +10,26 @@
       <xw:action type="script">window.alert(msg.Value + " @ server time " + msg.systemTime);</xw:action>
     </xw:event>
   </errai:subscriber>
+  
+  <p>Invoke using message bus:</p>
 
-  <xw:button label="Click me!">
+  <xw:button label="Invoke">
     <xw:event type="onclick">
       <xw:action type="script">bus.sendTextMessage("Hey!");</xw:action>
     </xw:event>
   </xw:button>
   
-  <xw:button label="Invoke RPC">
+  <br/>
+  
+  <p>Invoke using RPC:</p>
+  
+  <div>
+    Name: <xw:inputText id="val" value="World"/>
+  </div>
+  
+  <xw:button label="Invoke">
     <xw:event type="onclick">
-      <xw:action type="script">rpc.invoke("foo");</xw:action>
+      <xw:action type="script">rpc.invoke(val.getValue());</xw:action>
     </xw:event>
   </xw:button>
   
