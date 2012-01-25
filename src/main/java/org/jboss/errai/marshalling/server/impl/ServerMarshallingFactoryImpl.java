@@ -234,7 +234,6 @@ public class ServerMarshallingFactoryImpl implements MarshallerFactory {
     marshallers.put("java.util.Collections$EmptyList", java_util_List);
     marshallers.put("java.util.Arrays$ArrayList", java_util_List);
     marshallers.put("java.util.AbstractList", java_util_List);
-
     marshallers.put("[Ljava.lang.StackTraceElement;", arrayOf_java_lang_StackTraceElement_D1);
     java_lang_RuntimeException = new Marshaller<RuntimeException>() {
       public Class getTypeHandled() {
